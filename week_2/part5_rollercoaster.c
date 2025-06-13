@@ -27,16 +27,16 @@ int main(void) {
 	
 	int height = 0;
 	printf("What is your height? ");
-	if (scanf("%d", &height) == 1) {
-		if (height < 0) {
+	scanf("%d", &height);
+
+	if (height < 0) {
 		printf("Wow, that is impossible! (ERROR)\n");
-		}  else if (height < MIN_HEIGHT) {
-			printf("You are too short! :(\n");
-		} else if (MIN_HEIGHT <= height && height < THRESHOLD) {
-			printf("You are tall enough to ride but you need an adult!\n");
-		} else if (height >= THRESHOLD) {
-			printf("You can ride!!!\n");
-		}
+	}  else if (height < MIN_HEIGHT) {
+		printf("You are too short! :(\n");
+	} else if (MIN_HEIGHT <= height && height < THRESHOLD) {
+		printf("You are tall enough to ride but you need an adult!\n");
+	} else if (height >= THRESHOLD) {
+		printf("You can ride!!!\n");
 	}
 
 	printf("If I want to print a double %.5lf");

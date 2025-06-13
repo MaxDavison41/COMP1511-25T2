@@ -15,8 +15,8 @@ int main(void) {
 	int area = 0;
 
     // 2. Initalise the variables
-	radius = 5;
-
+	printf("Enter the radius of the circle: ");
+	scanf("%d", &radius);
     // 3. Calculate the area of the circle
 	// pi*r^2
 	area = PI * radius * radius;
